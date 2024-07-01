@@ -10,7 +10,7 @@ import { AuthModule } from './auth/auth.module';
 import { OrderModule } from './order/order.module';
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/eCommerce', {}),
+    MongooseModule.forRoot('mongodb+srv://sachinmandloi01:<password>@cluster0.efjbfhp.mongodb.net/eCommerce?retryWrites=true&w=majority&appName=Cluster0', {}),
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'uploads'),
       serveRoot: '/uploads', // This is the base URL path where the files will be served from
